@@ -1,0 +1,10 @@
+/* Copyright (c) 2015 Erica Remmele except where noted */  
+
+body {
+     background: no-repeat center center fixed; 
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
+     background-image: url("../images/frog.jpg");
+ }
