@@ -1,28 +1,29 @@
 /* Copyright (c) 2015 Erica Remmele except where noted */  
 
+html, body, .container {
+    height: 100%;
+}
+
 body {
-	 background-image: url("../images/batman.jpg");
+     background-image: url("../images/batman.jpg");
      background-attachment: fixed;
      background-position: center; 
      background-repeat: no-repeat;
      background-size: 50%;
  }
 
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 h1 {
-	color: #fff;
+    color: #fff;
     position: center;
     float: center;
     font-size: 2vh;
     font-family: "Vesper Libre", "open-sans", sans-serif;
     font-weight: 900;
     text-shadow: 2px 2px 8px #FF0000;
-}
-
-html, body, .container {
-    height: 100%;
-}
-.container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
