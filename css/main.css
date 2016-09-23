@@ -60,7 +60,6 @@ h1 {
   float:left;
   text-align: center;
   margin: 0;
-  position: top;
 }
 .col:first-child { margin-left: 0; }
 
@@ -69,3 +68,8 @@ h1 {
 .group:after { content:""; display:table; }
 .group:after { clear:both;}
 .group {zoom:1; /* For IE 6/7 */ }
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
