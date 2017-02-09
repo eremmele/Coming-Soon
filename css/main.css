@@ -5,7 +5,7 @@ html, body, .container {
 }
 
 body {
-     background-image: url("../images/batman.jpg");
+     background-image: url("../images/frog.jpg");
      background-attachment: fixed;
      background-position: center; 
      background-repeat: no-repeat;
@@ -17,7 +17,7 @@ body {
 .container {
     text-align: center;
     margin: 15vh 0 0 0;
-    z-index:1;
+    z-index:2;
 }
 
 h1 {
@@ -70,3 +70,8 @@ a {
   color: #fff;
   text-decoration: none;
 }
+
+/*
+.background {
+
+}*/
