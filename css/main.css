@@ -4,15 +4,83 @@ html, body, .container {
     width: 100%;
 }
 
-body {
-     background-image: url("../images/frog.jpg");
+body#work {
+     background-image: url("../images/batman-web.jpg"),url("../images/frog-web.jpg");
      background-attachment: fixed;
-     background-position: center; 
+     background-position: right bottom, left top;; 
      background-repeat: no-repeat;
      background-size: 50%;
      background-color: #ffffff;
      margin: 0;
+     overflow-x: none;
+     -webkit-animation: marquee 18s infinite linear;
  }
+
+ body#index {
+     background-attachment: fixed;
+     background-position: right bottom, left top;; 
+     background-repeat: no-repeat;
+     background-size: 50%;
+     background-color: #ffffff;
+     margin: 0;
+     overflow-x: none;
+     -webkit-animation: marquee 18s infinite linear;
+ }
+
+ @-webkit-keyframes marquee {
+  0% {
+    background-position: 100vw, -100vw;
+  }
+
+  100% {
+    background-position: -100vw, 100vw;
+  }
+} 
+
+/*body {
+  width: 100vw;
+}
+
+.top {
+  z-index: 9999;
+  position: fixed;
+}
+
+.background {
+    width: 100vw;
+    margin: 0;
+    /*overflow-x: none;
+    -webkit-animation: marquee 15s infinite linear;
+    z-index: 1;
+    position: absolute;
+}
+
+.marquee {
+    width: 100vw;
+    margin: 0 auto;
+    overflow: hidden;
+    white-space: nowrap;
+    -webkit-animation: marquee 15s linear infinite;
+    animation: marquee 15s linear infinite;
+      display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.marquee:hover {
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+@-webkit-keyframes marquee {
+    from   { left:0 }    
+    to { left:100% }
+}
+
+@keyframes marquee {
+    from   { left:0 }    
+    to { left:100% }
+} */
 
 .container {
     text-align: center;
@@ -70,8 +138,3 @@ a {
   color: #fff;
   text-decoration: none;
 }
-
-/*
-.background {
-
-}*/
