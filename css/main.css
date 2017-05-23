@@ -71,6 +71,10 @@ body#work {
     to { left:100% }
 } */
 
+.fixed {
+  position: fixed;
+}
+
 .container {
     text-align: center;
     margin: 15vh 0 0 0;
@@ -91,6 +95,10 @@ h1 {
 .span_3_of_3 {
   width: 100%;
   height: 10%;
+  transform: translate(33.3%,0);
+  -webkit-transform: translate(33.3%,0);
+  -ms-transform: translate(33.3%,0);
+  position: fixed;
 }
 .span_2_of_3 {
   width: 66.6%;
@@ -126,4 +134,30 @@ h1 {
 a {
   color: #fff;
   text-decoration: none;
+}
+
+.soc {
+  display: block;
+}
+.soc li {
+  display: inline-block;
+}
+
+#bloginfo {
+  display: none;
+  margin-bottom: 0;
+  margin: 0 0 -10px 0;
+  padding-bottom: 0;
+}
+
+
+/* staple clauses */
+.superman {
+  z-index: 99999;
+}
+.lexluthor {
+  z-index: 1;
+}
+.catwoman {
+  position: static;
 }
