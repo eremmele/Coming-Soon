@@ -10,25 +10,25 @@
         });
     });*/
 
-$(document).ready(function(){
+$j(document).ready(function(){
   var clicked=false;
     
   //start hidden
-  $('#bloginfo').hide();
+  $j('#bloginfo').hide();
     
     //about click
-    $('#blog').on('click', function() {
+    $j('#blog').on('click', function() {
         clicked = !clicked;
-        $('#blog').hide();
-        $('#bloginfo').show();
+        $j('#blog').hide();
+        $j('#bloginfo').show();
     });
     
     //about hover
-    $('#blog').click(
+    $j('#blog').click(
       function() {
           if (!clicked) {
-             $('#bloginfo').hide();
-             $('#bloginfo').show();
+             $j('#bloginfo').hide();
+             $j('#bloginfo').show();
           }
       }
     ); 

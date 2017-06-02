@@ -1,78 +1,40 @@
 /* Copyright (c) 2015 Erica Remmele except where noted */  
 
 html, body, .container {
-    width: 100%;
+  width: auto;
+  height: 100vh;
+}
+.container {
+  z-index: 9999;
 }
 
 body#work {
-     background-image: url("../images/frog-web.jpg");
-     background-attachment: fixed;
-     background-position: center; 
-     background-repeat: no-repeat;
-     background-size: 50%;
-     background-color: #ffffff;
-     margin: 0;
-     overflow-x: scroll;
- }
-
- body#index {
-     background-attachment: fixed;
-     background-position: right bottom, left top;; 
-     background-repeat: no-repeat;
-     background-size: 50%;
-     background-color: #ffffff;
-     margin: 0;
-     overflow-x: none;
-     -webkit-animation: marquee 18s infinite linear;
- } 
-
-/*body {
-  width: 100vw;
+  background-image: url("../images/frog-web.jpg");
+  background-attachment: fixed;
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-color: #ffffff;
+  margin: 0;
+  overflow-x: scroll;
 }
 
-.top {
-  z-index: 9999;
-  position: fixed;
-}
-
-.background {
-    width: 100vw;
-    margin: 0;
-    /*overflow-x: none;
-    -webkit-animation: marquee 15s infinite linear;
-    z-index: 1;
-    position: absolute;
-}
-
-.marquee {
-    width: 100vw;
-    margin: 0 auto;
-    overflow: hidden;
-    white-space: nowrap;
-    -webkit-animation: marquee 15s linear infinite;
-    animation: marquee 15s linear infinite;
-      display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.marquee:hover {
-    -webkit-animation-play-state: paused;
-    animation-play-state: paused;
-}
-
-@-webkit-keyframes marquee {
-    from   { left:0 }    
-    to { left:100% }
-}
-
-@keyframes marquee {
-    from   { left:0 }    
-    to { left:100% }
-} */
+body#index {
+  background-attachment: fixed;
+  background-position: right bottom, left top;; 
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-color: #ffffff;
+  margin: 0;
+  overflow-x: none;
+  -webkit-animation: marquee 18s infinite linear;
+} 
 
 .fixed {
   position: fixed;
+}
+.absolute {
+  position: absolute
 }
 
 .container {
@@ -161,3 +123,21 @@ a {
 .catwoman {
   position: static;
 }
+
+
+/* HORIZONTAL SCROLL */
+.thumbnails {
+  display: inline-block;
+  z-index: 1;
+}
+.thumbnails img {
+  width: 50vw;
+  margin: 0 10vw 0 0;
+  float: left;
+  z-index: 1;
+}
+.post {
+
+}
+
+/* end horizontal scroll */
