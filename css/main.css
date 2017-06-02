@@ -1,15 +1,23 @@
 /* Copyright (c) 2015 Erica Remmele except where noted */  
-
-html, body {
-  width: auto;
-  height: 100vh;
-  overflow-x: hidden;
-}
 * {
     margin: 0;
     padding: 0;
 }
-.container {
+body {
+  background: #fff;
+  width: 100vw;
+}
+tr { 
+  vertical-align: top;
+}
+.post { 
+  height: 478px; 
+}
+section {
+  position: fixed;
+}
+
+/*.container {
   z-index: 9999;
   height: 100vh;
 }
@@ -35,24 +43,33 @@ body#index {
   overflow-x: none;
   -webkit-animation: marquee 18s infinite linear;
 } 
+*/
 
+/* staple classes */
+.superman {
+  z-index: 99999;
+}
+.lexluthor {
+  z-index: 1;
+}
+.catwoman {
+  position: static;
+}
 .fixed {
   position: fixed;
 }
 .absolute {
   position: absolute
 }
+/* end staples */
 
 .container {
     text-align: center;
-    margin: 15vh 0 0 0;
-    z-index:2;
+    margin: 18.25vh 0 0 0; /*15vh*/ /*could be 18*/
 }
 
 h1 {
     color: #fff;
-    position: center;
-    float: center;
     font-size: 2vh;
     font-family: "Vesper Libre", "open-sans", sans-serif;
     font-weight: 900;
@@ -60,7 +77,7 @@ h1 {
 }
 
 /*  GRID OF FOUR  */
-.span_3_of_3 {
+/*.span_3_of_3 {
   width: 100%;
   height: 10%;
   transform: translate(33.3%,0);
@@ -75,13 +92,52 @@ h1 {
 .span_1_of_3 {
   width: 33.3%;
   height: 10%;
+}*/
+.span_1_of_3 {
+  width: 25%;
+  height: 10%;
+  position: fixed;
+  transform: translate(16.6%,0);
+  -webkit-transform: translate(16.6%,0);
+  -ms-transform: translate(16.6%,0);
+  float: center;
+  text-align: center;
+  z-index:9998;
+}
+.span_2_of_3 {
+  width: 50%;
+  height: 10%;
+  position: fixed;
+    transform: translate(49.9%,0);
+  -webkit-transform: translate(49.9%,0);
+  -ms-transform: translate(49.9%,0);
+  position: center;
+  float: center;
+  text-align: center;
+  z-index:9999;
+}
+.span_3_of_3 {
+  width: 100%;
+  height: 10%;
+  position: fixed;
+  transform: translate(33.25%,0);
+  -webkit-transform: translate(33.25%,0);
+  -ms-transform: translate(33.25%,0);
+  float: center;
+  text-align: center;
+  z-index:9998;
 }
 
 .section {
   clear: both;
+  width: 100vw;
   padding: 0px;
   margin: 30vh 0 0 0;
   z-index: 9998;
+  display:inline-block;
+    position: center;
+  float: center;
+  text-align: center;
 }
 
 /*  COLUMN SETUP  */
@@ -114,32 +170,12 @@ a {
 #bloginfo {
   display: none;
   margin-bottom: 0;
-  margin: 0 0 -10px 0;
+  margin: 0 0 0 0; /* maybe move bottom -10px */
   padding-bottom: 0;
 }
 
 
-/* staple clauses */
-.superman {
-  z-index: 99999;
-}
-.lexluthor {
-  z-index: 1;
-}
-.catwoman {
-  position: static;
-}
-
-
 /* HORIZONTAL SCROLL */
-.thumbnails img {
-  width: 44.75rem;
-  margin: 0 10vw 0 0;
-  float: left;
-  z-index: 1;
-}
-.post {
 
-}
 
 /* end horizontal scroll */

@@ -33,10 +33,10 @@
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script src="jquery.mousewheel.js"></script>
     <script>
-    $(function(){
-        $("#page-wrap").wrapInner("<table cellspacing='30'><tr>");
-        $(".post").wrap("<td></td>");
-        $("body").mousewheel(function(event, delta) {
+    $j(function(){
+        $j("#page-wrap").wrapInner("<table cellspacing='30'><tr>");
+        $j(".post").wrap("<td></td>");
+        $j("body").mousewheel(function(event, delta) {
             this.scrollLeft -= (delta * 30);
             event.preventDefault();
         });
@@ -46,22 +46,20 @@
 
 </head>
 
-<body id="work">
-
-<!--  NAVIGATION BEGIN -->
-<div class="superman">
-  <div class="section group"> <h1>
+<body>
+<section>
+    <div class="section group"> <h1>
       <div class="col span_1_of_3">
         <a href="#">about</a>
       </div>
-      <div class="col span_1_of_3">
+      <div class="col span_2_of_3">
         <a href="work.html">work</a>
       </div>
-      <div id="blog" class="col span_1_of_3">
+      <div id="blog" class="col span_3_of_3">
         <a href="#">blog</a>
       </div>
 
-      <div id="bloginfo" class="col span_1_of_3 soc">  
+      <div id="bloginfo" class="col span_3_of_3 soc">  
             <li><a href="https://www.instagram.com/comingsoon.help/" class="instagram" title="Instagram">
               <svg viewBox="0 0 512 512" width="3vh">
                 <defs>
@@ -99,33 +97,30 @@
 
 
 
-  <div class="container fixed superman catwoman">
+  <div class="container">
        <h1><a href="index.html">coming soon</a></h1>
   </div>
-</div>
+</section>
 <!-- END NAVIGATION -->
 
 <!-- BEGIN scrolling images -->
-    <div id="page-wrap" class="lexluthor">
+  <div class="post">
+    <img src="images/frog-web.jpg" height="478px;"/>
+  </div>
 
-        <div class="post">
-            <img src="images/frog-web.jpg" height="478px;"/>
-        </div>
+  <div class="post">
+    <img src="images/batman-web.jpg" height="478px;"/>
+  </div>
 
-        <div class="post">
-            <img src="images/batman-web.jpg" height="478px;"/>
-        </div>
-
-        <div class="post">
-            <img src="images/lookdown5.jpg" height="478px;"/>
-
-    </div>
+  <div class="post">
+    <img src="images/lookdown5.jpg" height="478px;"/>
+  </div>
 <!-- end scrolling images -->
 
 
 <!-- PAGE END -->
-<!-- javacsript -->
-<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script> 
+<!-- javascript -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 
 <script>var $j = jQuery.noConflict(true);</script>
 <script src="js/toggle.js" type="text/javascript"></script> <!--toggle nav-->
