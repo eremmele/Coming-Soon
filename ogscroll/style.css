@@ -24,6 +24,7 @@ h1 {
 	font-size: 4.0em;
 	letter-spacing: -1px; 
 	color: #ccc; 
+	position: fixed;
 }
 h2 { 
 	font-family: Sans-serif; 
