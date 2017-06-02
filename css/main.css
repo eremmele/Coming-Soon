@@ -1,11 +1,17 @@
 /* Copyright (c) 2015 Erica Remmele except where noted */  
 
-html, body, .container {
+html, body {
   width: auto;
   height: 100vh;
+  overflow-x: hidden;
+}
+* {
+    margin: 0;
+    padding: 0;
 }
 .container {
   z-index: 9999;
+  height: 100vh;
 }
 
 body#work {
@@ -133,7 +139,8 @@ a {
   z-index: 1;
 }
 .post {
-
+    height: 478px;
+    width: 720px;
 }
 
 /* end horizontal scroll */
