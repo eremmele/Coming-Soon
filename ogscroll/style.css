@@ -15,13 +15,6 @@ tr {
 .post { 
 	height: 478px; 
 }
-h1 { 
-	font-family: Sans-serif; 
-	font-size: 4.0em;
-	letter-spacing: -1px; 
-	color: #ccc; 
-	position: fixed;
-}
 section {
 	position: fixed;
 }
