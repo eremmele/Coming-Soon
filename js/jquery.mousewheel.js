@@ -10,17 +10,17 @@
  * Requires: 1.2.2+
  */
 
-(function($) {
+(function($j) {
 
 var types = ['DOMMouseScroll', 'mousewheel'];
 
-if ($.event.fixHooks) {
+if ($j.event.fixHooks) {
     for ( var i=types.length; i; ) {
-        $.event.fixHooks[ types[--i] ] = $.event.mouseHooks;
+        $j.event.fixHooks[ types[--i] ] = $j.event.mouseHooks;
     }
 }
 
-$.event.special.mousewheel = {
+$j.event.special.mousewheel = {
     setup: function() {
         if ( this.addEventListener ) {
             for ( var i=types.length; i; ) {
@@ -42,7 +42,7 @@ $.event.special.mousewheel = {
     }
 };
 
-$.fn.extend({
+$j.fn.extend({
     mousewheel: function(fn) {
         return fn ? this.bind("mousewheel", fn) : this.trigger("mousewheel");
     },
@@ -55,7 +55,7 @@ $.fn.extend({
 
 function handler(event) {
     var orgEvent = event || window.event, args = [].slice.call( arguments, 1 ), delta = 0, returnValue = true, deltaX = 0, deltaY = 0;
-    event = $.event.fix(orgEvent);
+    event = $j.event.fix(orgEvent);
     event.type = "mousewheel";
     
     // Old school scrollwheel delta
@@ -78,7 +78,7 @@ function handler(event) {
     // Add event and delta to the front of the arguments
     args.unshift(event, delta, deltaX, deltaY);
     
-    return ($.event.dispatch || $.event.handle).apply(this, args);
+    return ($j.event.dispatch || $j.event.handle).apply(this, args);
 }
 
 })(jQuery);
