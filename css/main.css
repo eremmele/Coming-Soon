@@ -181,6 +181,9 @@ section {
   position: fixed;
   overflow: auto;
 }
+aside {
+  overflow: auto;
+}
 .images {
   padding: 18.5vh 0 0 25.05vw;
 }
