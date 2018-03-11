@@ -1,4 +1,4 @@
-/* Copyright (c) 2015 Erica Remmele except where noted */  
+/* Copyright (c) 2015 Erica Remmele except where noted */
 * {
     margin: 0;
     padding: 0;
@@ -21,7 +21,7 @@ body {
 body#work {
   background-image: url("../images/frog-web.jpg");
   background-attachment: fixed;
-  background-position: center; 
+  background-position: center;
   background-repeat: no-repeat;
   background-size: 50%;
   background-color: #ffffff;
@@ -31,14 +31,14 @@ body#work {
 
 body#index {
   background-attachment: fixed;
-  background-position: right bottom, left top;; 
+  background-position: right bottom, left top;;
   background-repeat: no-repeat;
   background-size: 50%;
   background-color: #ffffff;
   margin: 0;
   overflow-x: none;
   -webkit-animation: marquee 18s infinite linear;
-} 
+}
 */
 
 /* staple classes */
@@ -71,6 +71,51 @@ h1 {
     font-weight: 900;
     text-shadow: 2px 2px 8px #FF0000;
 }
+
+/* ANIMATE SHADOW */
+ h1 a:hover {
+ position: relative;
+ height: 20px;
+ min-width: 20px;
+ padding: 0 20px;
+ line-height: 40px;
+ text-shadow: none;
+ top:-2px;
+}
+ h1 a:hover:after {
+   position: absolute;
+   content: "";
+   top: 15px;
+   left: 0;
+   right: 0;
+   z-index: -1;
+   height: 100%;
+   width: 100%;
+   margin: 0 auto;
+   -webkit-transform: scale(0.9);
+           transform: scale(0.9);
+   -webkit-filter: blur(15px);
+   filter: blur(15px);
+   background: -webkit-gradient(linear, right top, left top, from(#ff5770), color-stop(#e4428d), color-stop(#c42da8), color-stop(#9e16c3), color-stop(#6501de), color-stop(#9e16c3), color-stop(#c42da8), color-stop(#e4428d), to(#ff5770));
+   background: linear-gradient(to left, #ff5770, #e4428d, #c42da8, #9e16c3, #6501de, #9e16c3, #c42da8, #e4428d, #ff5770);
+   background-size: 200% 200%;
+   -webkit-animation: animateGlow 1s linear infinite;
+           animation: animateGlow 1s linear infinite; }
+
+@-webkit-keyframes animateGlow {
+ 0% {
+   background-position: 0% 50%; }
+ 100% {
+   background-position: 200% 50%; }
+}
+@keyframes animateGlow {
+ 0% {
+   background-position: 0% 50%; }
+ 100% {
+   background-position: 200% 50%; }
+}
+
+/* END ANIMATE SHADOW */
 
 /*  GRID OF FOUR  */
 /*.span_3_of_3 {
@@ -172,10 +217,10 @@ a {
 
 
 /* HORIZONTAL SCROLL */
-tr { 
+tr {
   vertical-align: top;
 }
-.post { 
+.post {
   height: 63.3vh; /*478px*/
   width: auto;
 }
